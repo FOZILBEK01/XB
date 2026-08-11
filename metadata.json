@@ -1,0 +1,6 @@
+{
+  "name": "Xumo Burger - Fast Food Vizitkasi",
+  "description": "Xumo Burger yemakxonasi: mazali burgerlar, lavash, hot-doglar va salqin ichimliklar. O'zgacha ta'm — o'zgacha sifat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
