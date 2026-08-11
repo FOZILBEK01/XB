@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flame, ChevronDown, Phone, MapPin, Clock, Sparkles, Navigation } from 'lucide-react';
 import { BUSINESS_INFO, WORKING_SCHEDULE } from '../data/content.ts';
+import logoImg from '../assets/images/xumo_burger_logo_1786443431633.jpg';
 
 interface HeroProps {
   onScrollToMenu: () => void;
@@ -31,16 +32,16 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToMenu, onScrollToContact })
         <span className="italic">O&apos;zgacha ta&apos;m — o&apos;zgacha sifat...</span>
       </div>
 
-      {/* Hero Visual Card / Mascot */}
+      {/* Hero Visual Card / Logo Emblem */}
       <div className="relative mb-5 group">
-        <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-br from-[#FF6B00] via-[#FF4500] to-[#CC2900] p-1 shadow-2xl shadow-[#FF5500]/30 border-2 border-[#FFA366]/40 flex items-center justify-center transform group-hover:scale-105 transition-all duration-300">
-          <div className="w-full h-full rounded-[22px] bg-[#120703]/90 flex flex-col items-center justify-center p-2 relative overflow-hidden">
-            <span className="text-5xl sm:text-6xl drop-shadow-[0_4px_12px_rgba(255,100,0,0.6)] animate-bounce-subtle">
-              🍔
-            </span>
-            <span className="text-[10px] font-black text-[#FFA366] uppercase tracking-widest mt-1 font-['Bebas_Neue',sans-serif]">
-              XUMO BURGER
-            </span>
+        <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-br from-[#FF6B00] via-[#FF4500] to-[#CC2900] p-1 shadow-2xl shadow-[#FF5500]/30 border-2 border-[#FFA366]/40 flex items-center justify-center transform group-hover:scale-105 transition-all duration-300 overflow-hidden">
+          <div className="w-full h-full rounded-[22px] bg-[#120703] flex items-center justify-center relative overflow-hidden">
+            <img 
+              src={logoImg} 
+              alt="Xumo Burger" 
+              className="w-full h-full object-cover rounded-[20px]"
+              referrerPolicy="no-referrer"
+            />
           </div>
         </div>
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { QrCode, Download, Copy, Check, Flame, X } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content.ts';
+import logoImg from '../assets/images/xumo_burger_logo_1786443431633.jpg';
 
 interface ShareQRModalProps {
   isOpen: boolean;
@@ -60,8 +61,13 @@ export const ShareQRModal: React.FC<ShareQRModalProps> = ({ isOpen, onClose }) =
         </button>
 
         {/* Title */}
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FF5500] to-[#E63900] text-white flex items-center justify-center mx-auto mb-3 shadow-lg shadow-[#FF5500]/30 text-2xl">
-          🍔
+        <div className="w-14 h-14 rounded-2xl bg-[#120703] border border-[#FF5500]/50 p-1 flex items-center justify-center mx-auto mb-3 shadow-lg shadow-[#FF5500]/30 overflow-hidden">
+          <img 
+            src={logoImg} 
+            alt="Xumo Burger" 
+            className="w-full h-full object-cover rounded-xl"
+            referrerPolicy="no-referrer"
+          />
         </div>
         <h3 className="text-xl font-black text-white mb-0.5 font-['Bebas_Neue',sans-serif] uppercase tracking-wide">
           XUMO BURGER VIZITKASI

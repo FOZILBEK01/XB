@@ -1,6 +1,7 @@
 import React from 'react';
 import { UtensilsCrossed, Send, QrCode, Phone, Flame } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content.ts';
+import logoImg from '../assets/images/xumo_burger_logo_1786443431633.jpg';
 
 interface HeaderProps {
   onOpenQR: () => void;
@@ -16,13 +17,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQR }) => {
           className="flex items-center gap-2.5 group focus:outline-none"
           id="header-brand-logo"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF6B00] to-[#E63900] border border-[#FF8A33]/40 flex items-center justify-center text-white shadow-md shadow-[#FF5500]/30 group-hover:scale-105 transition-transform">
-            <span className="text-xl">🍔</span>
+          <div className="w-10 h-10 rounded-xl bg-[#120703] border border-[#FF8A33]/40 p-0.5 flex items-center justify-center shadow-md shadow-[#FF5500]/30 group-hover:scale-105 transition-transform overflow-hidden">
+            <img 
+              src={logoImg} 
+              alt="Xumo Burger" 
+              className="w-full h-full object-cover rounded-lg"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
               <span className="text-lg font-black tracking-wider text-white uppercase font-['Bebas_Neue',sans-serif]">
-                XUMO<span className="text-[#FF5500]">_</span>BURGER
+                XUMO BURGER
               </span>
               <span className="px-1.5 py-0.5 rounded-full bg-[#FF5500]/20 border border-[#FF5500]/40 text-[#FF7A00] text-[9px] font-bold uppercase tracking-wider flex items-center gap-0.5">
                 <Flame className="w-2.5 h-2.5 fill-[#FF5500] text-[#FF5500]" /> Fast Food
